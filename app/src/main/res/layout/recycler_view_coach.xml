@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardCoach"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/MainBlue"
+    app:cardCornerRadius="11dp"
+    app:cardElevation="7dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/collapsableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgTeamLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:paddingStart="5dp"
+                android:src="@drawable/teams">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txtTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/fortunate"
+                android:text="Team"
+                android:textColor="@color/MainRed"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/MainRed"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/coach_logo">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="Coach"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="35dp"
+                    android:src="@drawable/ic_baseline_label_important_24">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txtTeamCoach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="Coach:- "
+                    android:textColor="@color/MainBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ass_coach_logo">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="Assistant Coach"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="35dp"
+                    android:src="@drawable/ic_baseline_label_important_24">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txtTeamAssCoach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="Coach:- "
+                    android:textColor="@color/MainBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/bannerCoachAdID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:adSize="BANNER"
+                app:adUnitId="@string/bannerCoachAdId">
+
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

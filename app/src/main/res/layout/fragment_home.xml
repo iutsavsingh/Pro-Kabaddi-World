@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pullToRefreshHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/MainBlue"
+        tools:context="com.cucler.prokabaddi.fragments.Home">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="196dp"
+                    android:layout_margin="10dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_corner_radius="30"
+                    app:iss_delay="0"
+                    app:iss_error_image="@drawable/darker_image"
+                    app:iss_period="3000"
+                    app:iss_placeholder="@color/MainBlue"
+                    app:iss_selected_dot="@drawable/default_selected_dot"
+                    app:iss_unselected_dot="@drawable/default_unselected_dot" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="9dp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:text="Upcoming Match"
+                        android:textColor="@color/card_purple"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/moreUpcomingMatch"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBarHomeUpcomingMatch"
+                    style="?android:attr/progressBarStyleSmallTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/MainRed"
+                    android:indeterminateTintMode="src_atop"
+                    android:progressTint="@color/MainRed"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/homeFixtureRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="9dp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:text="Result"
+                        android:textColor="@color/card_purple"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/moreResult"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBarHomeResult"
+                    style="?android:attr/progressBarStyleSmallTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/MainRed"
+                    android:indeterminateTintMode="src_atop"
+                    android:progressTint="@color/MainRed"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/homeResultRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="Match &amp; Updates"
+                    android:textColor="@color/card_purple"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarStyle="outsideOverlay">
+
+                    <LinearLayout
+                        android:id="@+id/nav_btn_l3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/MainRed"
+                            app:cardCornerRadius="11dp"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnHomeResult"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/result">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginTop="160dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/google_sans_bold"
+                                android:text="Result"
+                                android:textColor="@color/MainBlue"
+                                android:textSize="16sp">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/MainRed"
+                            app:cardCornerRadius="11dp"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnHomeFixture"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/fixture">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginTop="160dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/google_sans_bold"
+                                android:text="Fixture"
+                                android:textColor="@color/MainBlue"
+                                android:textSize="16sp">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/MainRed"
+                            app:cardCornerRadius="11dp"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnHomePointTable"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/point_table">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginTop="160dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/google_sans_bold"
+                                android:text="Point Table"
+                                android:textColor="@color/MainBlue"
+                                android:textSize="16sp">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="Kabaddi Season 9"
+                    android:textColor="@color/card_purple"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarStyle="outsideOverlay">
+
+                    <LinearLayout
+                        android:id="@+id/nav_btn_l4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/MainRed"
+                            app:cardCornerRadius="11dp"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnHomeCoach"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/coach">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginTop="160dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/google_sans_bold"
+                                android:text="Coach"
+                                android:textColor="@color/MainBlue"
+                                android:textSize="16sp">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/MainRed"
+                            app:cardCornerRadius="11dp"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnHomeTeams"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/teams">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginTop="160dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/google_sans_bold"
+                                android:text="Teams"
+                                android:textColor="@color/MainBlue"
+                                android:textSize="16sp">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/MainRed"
+                            app:cardCornerRadius="11dp"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnHomeFaq"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/faq">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginTop="160dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/google_sans_bold"
+                                android:text="Faq"
+                                android:textColor="@color/MainBlue"
+                                android:textSize="16sp">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="Help Us Grow"
+                    android:textColor="@color/card_purple"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/nav_btn_l5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/MainRed"
+                            app:cardCornerRadius="11dp"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnHomeGreetUs"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/greet_us">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginTop="160dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/google_sans_bold"
+                                android:text="Greet Us"
+                                android:textColor="@color/MainBlue"
+                                android:textSize="16sp">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/MainRed"
+                            app:cardCornerRadius="11dp"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnHomeRateUs"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/rate_us">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginTop="160dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/google_sans_bold"
+                                android:text="Rate Us"
+                                android:textColor="@color/MainBlue"
+                                android:textSize="16sp">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/MainRed"
+                            app:cardCornerRadius="11dp"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnHomeShareUs"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/share_us">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginTop="160dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/google_sans_bold"
+                                android:text="Share Us"
+                                android:textColor="@color/MainBlue"
+                                android:textSize="16sp">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/MainRed"
+                            app:cardCornerRadius="11dp"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnHomeMoreApps"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/more_apps">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginTop="160dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/google_sans_bold"
+                                android:text="More Apps"
+                                android:textColor="@color/MainBlue"
+                                android:textSize="16sp">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/bannerHomeAdID1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/bannerHomeAdId">
+
+                </com.google.android.gms.ads.AdView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

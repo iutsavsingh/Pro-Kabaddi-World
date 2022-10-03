@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "4643140784",
+    "firebase_url": "https://pro-kabaddi-2022-default-rtdb.firebaseio.com",
+    "project_id": "pro-kabaddi-2022",
+    "storage_bucket": "pro-kabaddi-2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4643140784:android:a662681ccc31b355953775",
+        "android_client_info": {
+          "package_name": "com.cucler.prokabaddi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4643140784-3crd6fa9hsv6n66fg8pk72cjaggs4l7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqM0EG0RpNI-cWsBJeA5UOD6AIeMyrWu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4643140784-3crd6fa9hsv6n66fg8pk72cjaggs4l7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4643140784:android:b61cc5ea2801d7a2953775",
+        "android_client_info": {
+          "package_name": "com.cucler.prokabaddi2022"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4643140784-715pnt8pv7398av995vhckb3jddrdaa0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cucler.prokabaddi2022",
+            "certificate_hash": "e036b5ded8166b0e11ebe88fd4fa768283c95df8"
+          }
+        },
+        {
+          "client_id": "4643140784-h5s4291alpk10617un7uchnahl0pfgrs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cucler.prokabaddi2022",
+            "certificate_hash": "c0284ea3d6af0046549c6e97ce274cf9327d4f16"
+          }
+        },
+        {
+          "client_id": "4643140784-3crd6fa9hsv6n66fg8pk72cjaggs4l7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqM0EG0RpNI-cWsBJeA5UOD6AIeMyrWu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4643140784-3crd6fa9hsv6n66fg8pk72cjaggs4l7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-2641278093386894~8536925711"
+    }
+  ],
+  "configuration_version": "1"
+}

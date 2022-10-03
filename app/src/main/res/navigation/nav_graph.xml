@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.cucler.prokabaddi.fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home2_to_coach"
+            app:destination="@id/coach"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_home2_to_team"
+            app:destination="@id/team"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_home2_to_faq"
+            app:destination="@id/faq"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_home2_to_fixture"
+            app:destination="@id/fixture"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_home2_to_pointTable"
+            app:destination="@id/pointTable"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_home2_self"
+            app:destination="@id/home2"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_home2_to_result"
+            app:destination="@id/result"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/coach"
+        android:name="com.cucler.prokabaddi.fragments.Coach"
+        android:label="fragment_coach"
+        tools:layout="@layout/fragment_coach">
+        <action
+            android:id="@+id/action_coach_to_home2"
+            app:destination="@id/home2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/faq"
+        android:name="com.cucler.prokabaddi.fragments.Faq"
+        android:label="fragment_faq"
+        tools:layout="@layout/fragment_faq">
+        <action
+            android:id="@+id/action_faq_to_home2"
+            app:destination="@id/home2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/team"
+        android:name="com.cucler.prokabaddi.fragments.Team"
+        android:label="fragment_team"
+        tools:layout="@layout/fragment_team">
+        <action
+            android:id="@+id/action_team_to_home2"
+            app:destination="@id/home2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fixture"
+        android:name="com.cucler.prokabaddi.fragments.Fixture"
+        android:label="fragment_fixture"
+        tools:layout="@layout/fragment_fixture">
+        <action
+            android:id="@+id/action_fixture_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/pointTable"
+        android:name="com.cucler.prokabaddi.fragments.PointTable"
+        android:label="fragment_point_table"
+        tools:layout="@layout/fragment_point_table">
+        <action
+            android:id="@+id/action_pointTable_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/result"
+        android:name="com.cucler.prokabaddi.fragments.Result"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_result_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+</navigation>

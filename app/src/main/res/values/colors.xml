@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="MainBlue">#0D1137</color>
+    <color name="MainRed">#E52165</color>
+
+    <color name="purple">#D4C4E3</color>
+    <color name="darkPurple">#9387F5</color>
+    <color name="blue">#A8DAF0</color>
+    <color name="peach">#F0C390</color>
+    <color name="green">#C3F09C</color>
+    <color name="orangeRed">#F3722C</color>
+    <color name="yellowOrange">#F8961E</color>
+    <color name="MangoTango">#F9844A</color>
+    <color name="maizeCrayola">#F9C74F</color>
+    <color name="card_purple">#8690B1</color>
+    <color name="card_yellow">#FFCC00</color>
+    <color name="card_red">#FF3B30</color>
+    <color name="card_violet">#FF9500</color>
+    <color name="card_blue">#5AC8FA</color>
+    <color name="card_green">#34C759</color>
+
+    <array name="teamBg">
+        <item>#00284e</item>
+        <item>#b20a16</item>
+        <item>#d91f2d</item>
+        <item>#f7ac59</item>
+        <item>#262f7c</item>
+        <item>#ee4a9b</item>
+        <item>#098145</item>
+        <item>#f47321</item>
+        <item>#1c165a</item>
+        <item>#ebc03a</item>
+        <item>#f05926</item>
+        <item>#eaca52</item>
+    </array>
+
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pro Kabaddi World</string>
+    <string name="adAppId">ca-app-pub-2641278093386894~8536925711</string>
+    <string name="bannerCoachAdId">ca-app-pub-2641278093386894/6078809999</string>
+    <string name="bannerFaqAdId">ca-app-pub-2641278093386894/8642529629</string>
+    <string name="bannerHomeAdId">ca-app-pub-2641278093386894/9016227859</string>
+    <string name="bannerTeamsAdId">ca-app-pub-2641278093386894/6955905251</string>
+    <string name="videoInterstitialFixtureAdId">ca-app-pub-2641278093386894/9572467915</string>
+    <string name="videoInterstitialGreetUsAdId">ca-app-pub-2641278093386894/8450957936</string>
+    <string name="videoInterstitialUpdatesAdId">ca-app-pub-2641278093386894/4320141235</string>
+    <string name="interstitialCoachAdId">ca-app-pub-2641278093386894/9704329856</string>
+    <string name="interstitialFaqAdId">ca-app-pub-2641278093386894/7816533117</string>
+    <string name="interstitialTeamsAdId">ca-app-pub-2641278093386894/6695023131</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

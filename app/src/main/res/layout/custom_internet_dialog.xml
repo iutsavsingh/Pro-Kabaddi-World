@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_round"
+        android:orientation="vertical">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="20dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:src="@drawable/ic_baseline_warning_24">-->
+
+<!--            </ImageView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:fontFamily="@font/google_sans_bold"-->
+<!--                android:text="No Internet Connection!!"-->
+<!--                android:textColor="@color/MainRed"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold">-->
+
+<!--            </TextView>-->
+
+<!--        </LinearLayout>-->
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_wifi_off_24"
+            android:layout_gravity="center">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:fontFamily="@font/google_sans_bold"
+            android:text="Internet Connection Required!"
+            android:textColor="@color/card_purple"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_baseline_exit_to_app_24">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imgYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_baseline_rotate_left_24">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
